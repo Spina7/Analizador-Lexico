@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body{
+      background-color: black;
+      font-size: 1.6rem;
+  }
+
+  h1{
+      color: white;
+      text-align: center;
+  }
+
+  h2{
+      color: white;
+      text-align: center;
+  }
+
+  .form-control{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 500px;
+  }
+  #resultado{
+      height: 210px;
+      width: 200;
+  }
+
+  input{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
