@@ -41,17 +41,22 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 60px;
+    height: 120px;
     width: 500px;
 }
 
 #resultado {
-    height: 210px;
-    width: 200;
+    height: 260px;
 }
 
+#expresion {
+    margin-top: 10px;
+}
 input {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
 }

@@ -2,6 +2,14 @@ function clearBox() {
     document.getElementById('resultado').innerHTML = "";
 }
 
+var input = document.querySelector('#clear');
+var textarea = document.querySelector('#expresion');
+
+input.addEventListener('click', function () {
+    clearBox();
+    textarea.value = '';
+}, false);
+
 function Analizar() {
     clearBox();
     var expresion = document.getElementById('expresion').value;
@@ -57,7 +65,7 @@ function Analizar() {
                 if (((expresion.charCodeAt(i) > 64) && (expresion.charCodeAt(i) < 91)) ||
                     ((expresion.charCodeAt(i) > 96) && (expresion.charCodeAt(i) < 123))) {
                     estado = 20;
-                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una letra de la variable" + estado + "\n";
+                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una Letra         " + estado + "\n";
 
                 } else {
                     resultado.innerHTML = resultado.innerHTML + "Entrada no valida al sistema desde el estado actual";
