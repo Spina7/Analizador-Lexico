@@ -224,7 +224,7 @@ function Analizar() {
                 } else if (((expresion.charCodeAt(i) > 64) && (expresion.charCodeAt(i) < 91)) ||
                     ((expresion.charCodeAt(i) > 96) && (expresion.charCodeAt(i) < 123))) {
                     estado = 10;
-                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una letra de la variable" + estado + "\n";
+                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una letra de la variable       " + estado + "\n";
 
                 } else if ((expresion.charCodeAt(i) > 47) && (expresion.charCodeAt(i) < 58)) {
                     estado = 22; //no esta en el diagrama
@@ -240,7 +240,7 @@ function Analizar() {
                 if (((expresion.charCodeAt(i) > 64) && (expresion.charCodeAt(i) < 91)) ||
                     ((expresion.charCodeAt(i) > 96) && (expresion.charCodeAt(i) < 123))) {
                     estado = 10;
-                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una letra de la variable" + estado + "\n";
+                    resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es una letra de la variable       " + estado + "\n";
 
                 } else {
                     resultado.innerHTML = resultado.innerHTML + "Entrada no valida al sistema desde el estado actual\n";
