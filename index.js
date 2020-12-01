@@ -39,8 +39,6 @@ function Analizar() {
                     estado = 5;
                     resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       es un Digito         " + estado + "\n";
 
-                } else if (expresion.charAt(i) == '\s') {
-                    estado = estado;
                 } else {
                     resultado.innerHTML = resultado.innerHTML + "Entrada no valida al sistema desde el estado actual\n";
                 }
@@ -84,8 +82,6 @@ function Analizar() {
                     estado = 6;
                     resultado.innerHTML = resultado.innerHTML + "'" + expresion.charAt(i) + "'       parentesis de apertura    " + estado + "\n";
 
-                } else if (expresion.charAt(i) == 32) {
-                    i = i + 1;
                 } else {
                     resultado.innerHTML = resultado.innerHTML + "Entrada no valida al sistema desde el estado actualkk\n";
                 }
